@@ -50,6 +50,8 @@ You can choose between these strategies:
 
 > To run the tests you must have the containers running
 
+> Be sure you are running from the environment you have previously activated
+
 Run on the project root folder:
 ```
 pytest tests/*.py
