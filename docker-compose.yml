@@ -1,0 +1,33 @@
+services:
+  main-api:
+    build:
+      context: "."
+      dockerfile: Dockerfile-main
+    container_name: main-api
+    restart: always
+    ports:
+      - "8000:8000"
+  external-api1:
+    build:
+      context: "."
+      dockerfile: Dockerfile-externals
+    container_name: external-api1
+    restart: always
+    ports:
+      - "81:8000"
+  external-api2:
+    build:
+      context: "."
+      dockerfile: Dockerfile-externals
+    container_name: external-api2
+    restart: always
+    ports:
+      - "82:8000"
+  external-api3:
+    build:
+      context: "."
+      dockerfile: Dockerfile-externals
+    container_name: external-api3
+    restart: always
+    ports:
+      - "83:8000"

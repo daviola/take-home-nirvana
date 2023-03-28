@@ -1,0 +1,5 @@
+FROM python:alpine
+COPY requirements.txt .
+COPY external_apis/*.py ./external_apis/
+RUN ["pip", "install", "-r", "requirements.txt"]
+CMD uvicorn external_apis.externals:external_app --reload --host 0.0.0.0
