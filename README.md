@@ -63,7 +63,7 @@ pytest tests/*.py --cov-report term-missing --cov .
 I've built these APIs using [fastapi](https://fastapi.tiangolo.com/), to take advantage of its asynchronous nature, although 
 is my first experience with this framework
 
-My first approach was, to have it all running in a single same API, that would call itself in different routes to emulate 
+My first approach was, to have it all running in a single API, that would call itself in different routes to emulate 
 multiple APIs, 
 but I thought it would be closer to reality if we had multiple APIs running in different containers, 
 and to achieve that, I used [Docker and docker compose](https://docs.docker.com/compose/), so it's possible to run all the APIs 
